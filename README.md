@@ -2,6 +2,8 @@
 
 A simple to-do list that runs entirely in the browser, built with plain HTML, CSS and JavaScript.
 
+**Live demo:** https://mubarakjk.github.io/task-tracker-dashboard/
+
 This was one of my first JavaScript projects. I built it to practise working with the DOM, handling events and saving data with LocalStorage.
 
 ## Features
