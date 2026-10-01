@@ -24,11 +24,18 @@ function render() {
     const li = document.createElement("li");
     li.className = "task" + (task.completed ? " completed" : "");
 
-    li.innerHTML = `
-      <span onclick="toggle(${index})">${task.text}</span>
-      <button class="delete-btn" onclick="removeTask(${index})">Delete</button>
-    `;
+    // textContent keeps task text as plain text, so typed HTML is never run
+    const text = document.createElement("span");
+    text.className = "task-text";
+    text.textContent = task.text;
+    text.addEventListener("click", () => toggle(index));
 
+    const deleteBtn = document.createElement("button");
+    deleteBtn.className = "delete-btn";
+    deleteBtn.textContent = "Delete";
+    deleteBtn.addEventListener("click", () => removeTask(index));
+
+    li.append(text, deleteBtn);
     list.appendChild(li);
   });
   updateStats();
@@ -53,4 +60,16 @@ function toggle(i) {
 
 // Remove a task
 function removeTask(i) {
-  tasks.sp
+  tasks.splice(i, 1);
+  save();
+  render();
+}
+
+addBtn.addEventListener("click", addTask);
+
+// Pressing Enter in the input adds the task too
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") addTask();
+});
+
+render();

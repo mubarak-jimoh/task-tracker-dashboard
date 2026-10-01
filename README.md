@@ -1,22 +1,35 @@
 # Task Tracker Dashboard
 
-I built this **Task Tracker Dashboard** using **HTML, CSS, and JavaScript**.  
+A simple to-do list that runs entirely in the browser, built with plain HTML, CSS and JavaScript.
 
-It lets you **add tasks, mark them as done, delete tasks**, and keeps track of progress. Tasks are saved in the browser using **LocalStorage**, so nothing gets lost when you close the page.  
-
-This project helped me practice creating a **clean interface** and adding interactivity with JavaScript.
+This was one of my first JavaScript projects. I built it to practise working with the DOM, handling events and saving data with LocalStorage.
 
 ## Features
-- Add tasks
-- Complete tasks
-- Delete tasks
-- See total and completed tasks
-- Data saved in the browser
 
-## How to Use
-1. Open `index.html` in a web browser  
-2. Start adding tasks!
+- Add tasks with the button or by pressing Enter
+- Click a task to mark it as done
+- Delete tasks
+- Live count of total and completed tasks
+- Tasks are saved in LocalStorage, so they are still there after a refresh
+
+## Run it
+
+No install or build step. Clone the repo and open `index.html` in a browser:
+
+```bash
+git clone https://github.com/Mubarakjk/task-tracker-dashboard.git
+```
+
+## What I learned
+
+- Rendering a list from an array and keeping the page in sync with the data
+- Saving and loading data with `localStorage` and JSON
+- Using `textContent` instead of `innerHTML` for user input, so text typed by the user is never run as HTML
+
+## Tech
+
+HTML, CSS, JavaScript. No libraries.
 
 ## License
-MIT License
 
+[MIT](LICENSE)
