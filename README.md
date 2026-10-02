@@ -2,7 +2,7 @@
 
 A simple to-do list that runs entirely in the browser, built with plain HTML, CSS and JavaScript.
 
-**Live demo:** https://mubarakjk.github.io/task-tracker-dashboard/
+**Live demo:** https://mubarak-jimoh.github.io/task-tracker-dashboard/
 
 This was one of my first JavaScript projects. I built it to practise working with the DOM, handling events and saving data with LocalStorage.
 
@@ -19,7 +19,7 @@ This was one of my first JavaScript projects. I built it to practise working wit
 No install or build step. Clone the repo and open `index.html` in a browser:
 
 ```bash
-git clone https://github.com/Mubarakjk/task-tracker-dashboard.git
+git clone https://github.com/mubarak-jimoh/task-tracker-dashboard.git
 ```
 
 ## What I learned
