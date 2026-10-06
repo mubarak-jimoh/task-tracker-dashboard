@@ -23,7 +23,15 @@
       <p><strong>Completed:</strong> <span id="completed">0</span></p>
     </section>
 
+    <section id="filters" aria-label="Filter tasks">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="active" aria-pressed="false">Active</button>
+      <button class="filter-btn" data-filter="completed" aria-pressed="false">Completed</button>
+      <button id="clear-completed" hidden>Clear completed</button>
+    </section>
+
     <ul id="task-list"></ul>
+    <p id="empty-message" hidden></p>
   </main>
 
   <script src="script.js"></script>
