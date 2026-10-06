@@ -10,7 +10,10 @@ This was one of my first JavaScript projects. I built it to practise working wit
 
 - Add tasks with the button or by pressing Enter
 - Click a task to mark it as done
+- Edit a task in place (Enter saves, Escape cancels)
 - Delete tasks
+- Filter by All, Active or Completed
+- Clear all completed tasks in one click
 - Live count of total and completed tasks
 - Tasks are saved in LocalStorage, so they are still there after a refresh
 
